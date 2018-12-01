@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 	"io/ioutil"
-	"strings"
 	"strconv"
+	"strings"
 )
 
 func main() {
@@ -14,9 +14,9 @@ func main() {
 	part2(strdat)
 }
 
-func part1(strdat []string){
+func part1(strdat []string) {
 	total := 0
-	for i:= 0; i < len(strdat)-1; i++ {
+	for i := 0; i < len(strdat)-1; i++ {
 		op := strdat[i][0]
 		num, _ := strconv.Atoi(strdat[i][1:len(strdat[i])])
 		if op == '+' {
@@ -28,12 +28,12 @@ func part1(strdat []string){
 	fmt.Println("Total is", total)
 }
 
-func part2(strdat []string){
+func part2(strdat []string) {
 	itotal := 0
 	total := 0
 	freq := make([]int, len(strdat))
 	for {
-		for i:= 0; i < len(strdat)-1; i++ {
+		for i := 0; i < len(strdat)-1; i++ {
 			itotal++
 			op := strdat[i][0]
 			num, _ := strconv.Atoi(strdat[i][1:len(strdat[i])])
