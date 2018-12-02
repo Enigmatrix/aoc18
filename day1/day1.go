@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	dat, _ := ioutil.ReadFile("day1.txt")
+	dat, _ := ioutil.ReadFile("day1/day1.txt")
 	strdat := strings.Split(string(dat), "\n")
 	part1(strdat)
 	part2(strdat)
