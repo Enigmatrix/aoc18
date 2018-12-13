@@ -67,7 +67,6 @@ func part1(steps []Step) {
 	for _, c:= range fina {
 		fmt.Print(string(c))
 	}
-	fmt.Println()
 }
 
 func getNode(idx rune,ma map[rune]*Node) *Node {
